@@ -1,0 +1,55 @@
+.form {
+  padding: 10px 100px 10px 100px;
+  background-color: black;
+  overflow: auto;
+}
+
+.multicolortext {
+  padding-left: 450px;
+  padding-right: 400px;
+  font-size: 50px;
+  background-image: linear- gradient(to left, rgb(247, 90, 247), rgb(86, 3, 146), rgb(0, 150, 0), rgb(23, 23, 255), rgb(255, 255, 35), rgb(255, 167, 4), rgb(255, 5, 5));
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.num1 {
+  color: chartreuse;
+  font-size: 20px;
+}
+
+.num2 {
+  color: red;
+  font-size: 20px;
+}
+
+.num3 {
+  color: chartreuse;
+  font-size: 20px;
+}
+
+button {
+  width: 150px;
+  height: 90px;
+  padding: 5px;
+  margin: 10px;
+  transition-duration: 0.5s;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+  button:hover {
+    background-color: #ffee00;
+    color: #000000;
+  }
+
+.button {
+  border: 5px solid gold;
+  padding: 5px;
+  width: 340px;
+  height: auto;
+  float: right;
+}
+

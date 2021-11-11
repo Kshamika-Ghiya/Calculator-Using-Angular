@@ -1,0 +1,28 @@
+<div class="form">
+  <h2><span class="multicolortext">Simple  calculator</span></h2>
+  <div class="button">
+    <button (click)="addnum()">Add</button>
+    <button (click)="subnum()">Subtract</button><br>
+    <button (click)="multinum()">Multiply</button>
+    <button (click)="divnum()">Divide</button><br>
+    <button (click)="factnum1()">Factorial  of  num  1</button>
+    <button (click)="factnum2()">Factorial  of  num  2</button><br>
+    <button (click)="primenum1()">Prime  checker  for  num  1</button>
+    <button (click)="primenum2()">Prime  checker  for  num  2</button>
+  </div>
+
+  <p class="num1">First  number  is  :  {{a}}</p>
+  <p class="num1">Second  number  is  :  {{b}}</p>
+
+  <p class="num2">Note  :-  <br>(i)  Result  shown  below  after  reloding  the  page  is  incorrect.  So  press  the  button  for  correct  answer.< br>(ii)Don't  press  Factorial  button  twice.</p>
+
+  <p class="num3">
+    The  sum  of  2  numbers  ---  {{c1}}  <br>  The  difference  of  2  numbers  ---  {{c2}}  <br>  The  product  of  2  numbers  --
+    -  {{c3}}  <br>  The  quotient  of  2  numbers  ---  {{c4}}
+  </p>
+  <p class="num3">Factorial  of  {{a}}  ---  {{fac1}}  <br>  Factorial  of  {{b}}  ---  {{fac2}}</p>
+  <p *ngIf="count1  ==  0  ;else  not_prime1" class="num3">{{a}}  is  a  prime  number.</p>
+  <p *ngIf="count2  ==  0  ;else  not_prime2" class="num3">{{b}}  is  a  prime  number.</p>
+  <ng-template #not_prime1><p class="num3">{{a}}  is  not  a  prime  number</p></ng-template>
+  <ng-template #not_prime2><p class="num3">{{b}}  is  not  a  prime  number</p></ng-template>
+</div>
